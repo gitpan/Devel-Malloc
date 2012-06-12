@@ -1,4 +1,4 @@
-Devel/Malloc version 0.01
+Devel/Malloc version 0.02
 ==========================
 
 Low-level memory operations: _malloc _memset _memget _free.
@@ -8,6 +8,9 @@ retrieve them using _memget(). The _free() function deallocates memory.
 
 Memory address returned by _malloc() can be used between threads for
 signal-based real time inter-thread communications.
+
+Atomic __sync... operations also provided and can be used for lock-free
+memory access and for low-level mutex creation.
 
 INSTALLATION
 
