@@ -9,7 +9,7 @@ our @EXPORT = qw(_malloc _memset _memget _free __sync_store_sv __sync_load_sv
     __sync_fetch_and_add __sync_fetch_and_sub __sync_fetch_and_and __sync_fetch_and_or __sync_fetch_and_xor __sync_fetch_and_nand
     __sync_lock_test_and_set __sync_lock_release __sync_synchronize __sync_bool_compare_and_swap __sync_val_compare_and_swap
     );
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 require XSLoader;
 XSLoader::load('Devel::Malloc', $VERSION);
@@ -19,7 +19,7 @@ __END__
 
 =head1 NAME
 
-Devel::Malloc - Low-level memory operations for real-time inter-thread communication.
+Devel::Malloc - Low-level memory and atomic operations for real-time inter-thread communication.
 
 =head1 SYNOPSIS MALLOC
 

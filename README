@@ -1,7 +1,7 @@
-Devel/Malloc version 0.02
+Devel/Malloc version 0.03
 ==========================
 
-Low-level memory operations: _malloc _memset _memget _free.
+Low-level memory and atomic operations: _malloc _memset _memget _free.
 The _malloc() function allocates size bytes and returns memory address
 to the allocated memory. You can store strings to memory using _memset() and
 retrieve them using _memget(). The _free() function deallocates memory.

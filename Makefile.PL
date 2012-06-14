@@ -10,6 +10,7 @@ WriteMakefile(
       (ABSTRACT       => 'lib/Devel/Malloc.pm', # retrieve abstract from module
        AUTHOR         => 'Yury Kotlyarov') : ()),
     LIBS              => [''], # e.g., '-lm'
+    CCFLAGS           => '-march=i686',
     DEFINE            => '', # e.g., '-DHAVE_SOMETHING'
     INC               => '-I.', # e.g., '-I. -I/usr/include/other'
     # Un-comment this if you add C files to link with later:
